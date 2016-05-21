@@ -17,6 +17,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class AgregarReceptor extends javax.swing.JFrame {
    List<Servicio> listaServicios;
+   
     /**
      * Creates new form AgregarReceptor
      */
@@ -44,7 +45,6 @@ public class AgregarReceptor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTableReceptores = new javax.swing.JTable();
         jButtonFinalizar = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -98,13 +98,10 @@ public class AgregarReceptor extends javax.swing.JFrame {
 
         jTableReceptores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID Receptor", "ID Servicio", "Servicio"
             }
         ));
         jScrollPane3.setViewportView(jTableReceptores);
@@ -121,33 +118,33 @@ public class AgregarReceptor extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextNombreSede, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
-                            .addComponent(jTextSede))
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 422, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(23, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonFinalizar)
                 .addGap(42, 42, 42))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(136, 136, 136)
+                            .addComponent(jLabel1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel3))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jTextNombreSede, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                                .addComponent(jTextSede))
+                            .addGap(18, 18, 18)
+                            .addComponent(jButton1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(29, 29, 29)
+                            .addComponent(jLabel2))))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,20 +157,19 @@ public class AgregarReceptor extends javax.swing.JFrame {
                     .addComponent(jTextNombreSede, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jTextSede, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jTextSede, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton2)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButtonFinalizar)
                         .addGap(19, 19, 19))))
         );
@@ -185,29 +181,36 @@ public class AgregarReceptor extends javax.swing.JFrame {
         // TODO add your handling code here:
         String codSede = this.jTextSede.getText();
          List<Servicio> listaServicios;
-        DefaultTableModel Model = new DefaultTableModel();
+       DefaultTableModel Model = new DefaultTableModel();
         //Model.setColumnCount(0);
-       Model.addColumn("Id Reseptor");
-        Model.addColumn("Id servicio");
-      //  Model.addColumn("Servicio");
-        int i =0;
+       Model.addColumn("ID Receptor");
+       Model.addColumn("ID Servicio");
+       Model.addColumn("Servicio");
+       this.jTableReceptores.setModel(Model);
+        String[ ] datos = new String[3];
+        int i =1;
         if(!this.jTextNombreSede.getText().isEmpty() && !this.jTextSede.getText().isEmpty() ){
         
            listaServicios= buscarServiciosSede(codSede);
            Iterator<Servicio> It = listaServicios.iterator();
             while (It.hasNext()){
                    
-                   String id = It.next().getIdServicio();
+                  Servicio serIt  = It.next();
                    
-                   System.out.println("id receptor-------------> "+id);
-                  int codigoReceptor = agregarReceptor(codSede,id);
-                  Model.setValueAt(codigoReceptor, i, 0);
-                  Model.setValueAt(id, i, 1);
-                  Model.setValueAt(It.next().getTipo(), i, 2);
-                   
-                  i++;
-                   
-            
+                  String codigoReceptor1= "";
+
+                  int codigoReceptor = agregarReceptor(codSede,serIt.getIdServicio());
+                  
+                  codigoReceptor1 = String.valueOf(codigoReceptor);
+                  
+                  System.out.println("id receptor-------------> "+serIt.getIdServicio()+"  id Servicio------->"+codigoReceptor1+"   Servicio-------->"+serIt.getTipo());
+                  
+                  datos[0] = codigoReceptor1;
+                  datos[1] = serIt.getIdServicio();
+                  datos[2] = serIt.getTipo();
+                  
+                  Model.addRow(datos);
+
                 }
             
             this.jTableReceptores.setModel(Model);
@@ -285,7 +288,7 @@ public class AgregarReceptor extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTableReceptores;
+    public final javax.swing.JTable jTableReceptores = new javax.swing.JTable();
     public final javax.swing.JTextField jTextNombreSede = new javax.swing.JTextField();
     public final javax.swing.JTextField jTextSede = new javax.swing.JTextField();
     // End of variables declaration//GEN-END:variables

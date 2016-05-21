@@ -202,9 +202,11 @@ public class AgregarServicios extends javax.swing.JFrame {
                      if(respuesta1==JOptionPane.YES_OPTION){
                      
                      AgregarReceptor nuevo = new AgregarReceptor();
-                            nuevo.setVisible(true);
+                          
+                     nuevo.setVisible(true);
                             nuevo.jTextNombreSede.setText(nombreSede);
                             nuevo.jTextSede.setText(sedeId);
+                            
                             this.setVisible(false);
                      
                      }

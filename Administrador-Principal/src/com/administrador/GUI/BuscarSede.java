@@ -111,7 +111,7 @@ private List<Sede> listaSedes;
             }
         });
 
-        jButton4.setText("Agregar Receptor");
+        jButton4.setText("Agregar Servicios");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -127,7 +127,7 @@ private List<Sede> listaSedes;
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(174, Short.MAX_VALUE)
+                        .addContainerGap(176, Short.MAX_VALUE)
                         .addComponent(jButton3)
                         .addGap(56, 56, 56)
                         .addComponent(jButton4))
@@ -321,10 +321,10 @@ private List<Sede> listaSedes;
         String codigoSede = this.jTextSedeId.getText();
         
         if(!this.jTextNombre.getText().isEmpty() && !this.jTextSedeId.getText().isEmpty()){
-            AgregarReceptor nuevo = new AgregarReceptor();
+            AgregarServicios nuevo = new AgregarServicios();
                             nuevo.setVisible(true);
                             nuevo.jTextNombreSede.setText(Nombre);
-                            nuevo.jTextSede.setText(codigoSede);
+                            nuevo.jTextCodigoSede.setText(codigoSede);
 
                             this.setVisible(false);
         } else{

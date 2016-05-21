@@ -245,6 +245,7 @@ public class AgregarEmpleado extends javax.swing.JFrame {
                          nuevo.setVisible(true);
                          nuevo.jTextNombreSede.setText(nombreSede);
                          nuevo.jTextCodigoSede.setText(sede);
+                        
                          this.setVisible(false);
              /*
                             AgregarReceptor nuevo = new AgregarReceptor();

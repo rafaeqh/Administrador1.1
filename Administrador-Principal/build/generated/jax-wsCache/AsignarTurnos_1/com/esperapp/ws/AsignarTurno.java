@@ -18,7 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="CorreoUsuario" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Id_Sede" type="{http://ws.esperapp.com/}sede" minOccurs="0"/>
+ *         &lt;element name="Id_Sede" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="servicioId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -30,14 +31,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AsignarTurno", propOrder = {
     "correoUsuario",
-    "idSede"
+    "idSede",
+    "servicioId"
 })
 public class AsignarTurno {
 
     @XmlElement(name = "CorreoUsuario")
     protected String correoUsuario;
     @XmlElement(name = "Id_Sede")
-    protected Sede idSede;
+    protected String idSede;
+    protected String servicioId;
 
     /**
      * Obtiene el valor de la propiedad correoUsuario.
@@ -68,10 +71,10 @@ public class AsignarTurno {
      * 
      * @return
      *     possible object is
-     *     {@link Sede }
+     *     {@link String }
      *     
      */
-    public Sede getIdSede() {
+    public String getIdSede() {
         return idSede;
     }
 
@@ -80,11 +83,35 @@ public class AsignarTurno {
      * 
      * @param value
      *     allowed object is
-     *     {@link Sede }
+     *     {@link String }
      *     
      */
-    public void setIdSede(Sede value) {
+    public void setIdSede(String value) {
         this.idSede = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad servicioId.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getServicioId() {
+        return servicioId;
+    }
+
+    /**
+     * Define el valor de la propiedad servicioId.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setServicioId(String value) {
+        this.servicioId = value;
     }
 
 }

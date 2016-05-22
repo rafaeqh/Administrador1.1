@@ -27,6 +27,23 @@ public interface AsignarTurnos {
 
     /**
      * 
+     * @param idSede
+     * @param cedula
+     * @return
+     *     returns java.util.List<java.lang.String>
+     */
+    @WebMethod(operationName = "AtenderCliente")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "AtenderCliente", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AtenderCliente")
+    @ResponseWrapper(localName = "AtenderClienteResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AtenderClienteResponse")
+    public List<String> atenderCliente(
+        @WebParam(name = "idSede", targetNamespace = "")
+        String idSede,
+        @WebParam(name = "cedula", targetNamespace = "")
+        String cedula);
+
+    /**
+     * 
      * @param contra
      * @param idCorreo
      * @return
@@ -92,6 +109,23 @@ public interface AsignarTurnos {
     public void cambiarEstado(
         @WebParam(name = "Id_Receptor", targetNamespace = "")
         String idReceptor);
+
+    /**
+     * 
+     * @param cedulaEmp
+     * @param idSede
+     * @return
+     *     returns com.esperapp.ws.TurnoBackUp
+     */
+    @WebMethod(operationName = "TurnoReceptor")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "TurnoReceptor", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnoReceptor")
+    @ResponseWrapper(localName = "TurnoReceptorResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnoReceptorResponse")
+    public TurnoBackUp turnoReceptor(
+        @WebParam(name = "cedulaEmp", targetNamespace = "")
+        String cedulaEmp,
+        @WebParam(name = "idSede", targetNamespace = "")
+        String idSede);
 
     /**
      * 
@@ -265,6 +299,20 @@ public interface AsignarTurnos {
 
     /**
      * 
+     * @param nit
+     * @return
+     *     returns java.util.List<com.esperapp.ws.Sede>
+     */
+    @WebMethod(operationName = "BuscarSedesClaseXEntidad")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "BuscarSedesClaseXEntidad", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedesClaseXEntidad")
+    @ResponseWrapper(localName = "BuscarSedesClaseXEntidadResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedesClaseXEntidadResponse")
+    public List<Sede> buscarSedesClaseXEntidad(
+        @WebParam(name = "nit", targetNamespace = "")
+        String nit);
+
+    /**
+     * 
      * @return
      *     returns java.util.List<com.esperapp.ws.Entidad>
      */
@@ -292,6 +340,7 @@ public interface AsignarTurnos {
      * 
      * @param idSede
      * @param correoUsuario
+     * @param servicioId
      * @return
      *     returns java.lang.String
      */
@@ -303,7 +352,9 @@ public interface AsignarTurnos {
         @WebParam(name = "CorreoUsuario", targetNamespace = "")
         String correoUsuario,
         @WebParam(name = "Id_Sede", targetNamespace = "")
-        Sede idSede);
+        String idSede,
+        @WebParam(name = "servicioId", targetNamespace = "")
+        String servicioId);
 
     /**
      * 
@@ -333,22 +384,5 @@ public interface AsignarTurnos {
         String telefonoContacto,
         @WebParam(name = "Correo", targetNamespace = "")
         String correo);
-
-    /**
-     * 
-     * @param correoUsuario
-     * @param sede
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "BuscarSede")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "BuscarSede", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSede")
-    @ResponseWrapper(localName = "BuscarSedeResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedeResponse")
-    public String buscarSede(
-        @WebParam(name = "CorreoUsuario", targetNamespace = "")
-        String correoUsuario,
-        @WebParam(name = "Sede", targetNamespace = "")
-        String sede);
 
 }

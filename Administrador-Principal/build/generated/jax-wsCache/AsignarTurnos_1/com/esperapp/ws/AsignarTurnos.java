@@ -28,6 +28,20 @@ public interface AsignarTurnos {
     /**
      * 
      * @param idSede
+     * @return
+     *     returns java.util.List<com.esperapp.ws.Turno>
+     */
+    @WebMethod(operationName = "TurnosNoAtendidosEmpleado")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "TurnosNoAtendidosEmpleado", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnosNoAtendidosEmpleado")
+    @ResponseWrapper(localName = "TurnosNoAtendidosEmpleadoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnosNoAtendidosEmpleadoResponse")
+    public List<Turno> turnosNoAtendidosEmpleado(
+        @WebParam(name = "idSede", targetNamespace = "")
+        String idSede);
+
+    /**
+     * 
+     * @param idSede
      * @param cedula
      * @return
      *     returns java.util.List<java.lang.String>
@@ -41,6 +55,173 @@ public interface AsignarTurnos {
         String idSede,
         @WebParam(name = "cedula", targetNamespace = "")
         String cedula);
+
+    /**
+     * 
+     * @param idReceptor
+     */
+    @WebMethod(operationName = "CambiarEstado")
+    @Oneway
+    @RequestWrapper(localName = "CambiarEstado", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.CambiarEstado")
+    public void cambiarEstado(
+        @WebParam(name = "Id_Receptor", targetNamespace = "")
+        String idReceptor);
+
+    /**
+     * 
+     * @param idTurno
+     * @return
+     *     returns java.lang.Boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "cancelarTurno", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.CancelarTurno")
+    @ResponseWrapper(localName = "cancelarTurnoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.CancelarTurnoResponse")
+    public Boolean cancelarTurno(
+        @WebParam(name = "Id_Turno", targetNamespace = "")
+        String idTurno);
+
+    /**
+     * 
+     * @param idReceptor
+     * @param idTurno
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "RegistrarComoAtendido")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "RegistrarComoAtendido", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.RegistrarComoAtendido")
+    @ResponseWrapper(localName = "RegistrarComoAtendidoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.RegistrarComoAtendidoResponse")
+    public String registrarComoAtendido(
+        @WebParam(name = "idTurno", targetNamespace = "")
+        String idTurno,
+        @WebParam(name = "idReceptor", targetNamespace = "")
+        String idReceptor);
+
+    /**
+     * 
+     * @param nit
+     * @return
+     *     returns java.util.List<java.lang.String>
+     */
+    @WebMethod(operationName = "BuscarEntidad")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "BuscarEntidad", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidad")
+    @ResponseWrapper(localName = "BuscarEntidadResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidadResponse")
+    public List<String> buscarEntidad(
+        @WebParam(name = "Nit", targetNamespace = "")
+        String nit);
+
+    /**
+     * 
+     * @param nombre
+     * @param direccion
+     * @param nombreContacto
+     * @param nitEntidad
+     * @param telefonoContacto
+     * @param correo
+     * @return
+     *     returns int
+     */
+    @WebMethod(operationName = "AgregarSede")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "AgregarSede", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarSede")
+    @ResponseWrapper(localName = "AgregarSedeResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarSedeResponse")
+    public int agregarSede(
+        @WebParam(name = "NitEntidad", targetNamespace = "")
+        String nitEntidad,
+        @WebParam(name = "Nombre", targetNamespace = "")
+        String nombre,
+        @WebParam(name = "NombreContacto", targetNamespace = "")
+        String nombreContacto,
+        @WebParam(name = "TelefonoContacto", targetNamespace = "")
+        String telefonoContacto,
+        @WebParam(name = "Correo", targetNamespace = "")
+        String correo,
+        @WebParam(name = "Direccion", targetNamespace = "")
+        String direccion);
+
+    /**
+     * 
+     * @param cod
+     * @return
+     *     returns java.util.List<java.lang.String>
+     */
+    @WebMethod(operationName = "BuscarSedeCodigo")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "BuscarSedeCodigo", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedeCodigo")
+    @ResponseWrapper(localName = "BuscarSedeCodigoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedeCodigoResponse")
+    public List<String> buscarSedeCodigo(
+        @WebParam(name = "cod", targetNamespace = "")
+        String cod);
+
+    /**
+     * 
+     * @param servicio
+     * @param codigoSede
+     * @return
+     *     returns boolean
+     */
+    @WebMethod(operationName = "AgregarServicio")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "AgregarServicio", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarServicio")
+    @ResponseWrapper(localName = "AgregarServicioResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarServicioResponse")
+    public boolean agregarServicio(
+        @WebParam(name = "codigoSede", targetNamespace = "")
+        String codigoSede,
+        @WebParam(name = "servicio", targetNamespace = "")
+        String servicio);
+
+    /**
+     * 
+     * @param name
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "hello", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.Hello")
+    @ResponseWrapper(localName = "helloResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.HelloResponse")
+    public String hello(
+        @WebParam(name = "name", targetNamespace = "")
+        String name);
+
+    /**
+     * 
+     * @param idSede
+     * @param correoUsuario
+     * @param idServicio
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "AsignarTurno")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "AsignarTurno", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AsignarTurno")
+    @ResponseWrapper(localName = "AsignarTurnoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AsignarTurnoResponse")
+    public String asignarTurno(
+        @WebParam(name = "CorreoUsuario", targetNamespace = "")
+        String correoUsuario,
+        @WebParam(name = "Id_Sede", targetNamespace = "")
+        String idSede,
+        @WebParam(name = "Id_Servicio", targetNamespace = "")
+        String idServicio);
+
+    /**
+     * 
+     * @param idCorreo
+     * @param mensaje
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod(operationName = "EnviarNotificacion")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "EnviarNotificacion", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EnviarNotificacion")
+    @ResponseWrapper(localName = "EnviarNotificacionResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EnviarNotificacionResponse")
+    public String enviarNotificacion(
+        @WebParam(name = "idCorreo", targetNamespace = "")
+        String idCorreo,
+        @WebParam(name = "mensaje", targetNamespace = "")
+        String mensaje);
 
     /**
      * 
@@ -101,31 +282,37 @@ public interface AsignarTurnos {
 
     /**
      * 
-     * @param idReceptor
+     * @param nombre
+     * @param contra
+     * @param correoId
+     * @return
+     *     returns boolean
      */
-    @WebMethod(operationName = "CambiarEstado")
-    @Oneway
-    @RequestWrapper(localName = "CambiarEstado", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.CambiarEstado")
-    public void cambiarEstado(
-        @WebParam(name = "Id_Receptor", targetNamespace = "")
-        String idReceptor);
+    @WebMethod(operationName = "EditarCuentaAdmin")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "EditarCuentaAdmin", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EditarCuentaAdmin")
+    @ResponseWrapper(localName = "EditarCuentaAdminResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EditarCuentaAdminResponse")
+    public boolean editarCuentaAdmin(
+        @WebParam(name = "Correo_Id", targetNamespace = "")
+        String correoId,
+        @WebParam(name = "nombre", targetNamespace = "")
+        String nombre,
+        @WebParam(name = "contra", targetNamespace = "")
+        String contra);
 
     /**
      * 
-     * @param cedulaEmp
-     * @param idSede
+     * @param trabajo
      * @return
-     *     returns com.esperapp.ws.TurnoBackUp
+     *     returns com.esperapp.ws.Trabajo
      */
-    @WebMethod(operationName = "TurnoReceptor")
+    @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "TurnoReceptor", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnoReceptor")
-    @ResponseWrapper(localName = "TurnoReceptorResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.TurnoReceptorResponse")
-    public TurnoBackUp turnoReceptor(
-        @WebParam(name = "cedulaEmp", targetNamespace = "")
-        String cedulaEmp,
-        @WebParam(name = "idSede", targetNamespace = "")
-        String idSede);
+    @RequestWrapper(localName = "enviarTrabajo", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EnviarTrabajo")
+    @ResponseWrapper(localName = "enviarTrabajoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.EnviarTrabajoResponse")
+    public Trabajo enviarTrabajo(
+        @WebParam(name = "trabajo", targetNamespace = "http://ws.esperapp.com/")
+        Trabajo trabajo);
 
     /**
      * 
@@ -208,6 +395,20 @@ public interface AsignarTurnos {
 
     /**
      * 
+     * @param idCorreo
+     * @return
+     *     returns java.util.List<com.esperapp.ws.Turno>
+     */
+    @WebMethod(operationName = "VerHistorialTurnos")
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "VerHistorialTurnos", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.VerHistorialTurnos")
+    @ResponseWrapper(localName = "VerHistorialTurnosResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.VerHistorialTurnosResponse")
+    public List<Turno> verHistorialTurnos(
+        @WebParam(name = "idCorreo", targetNamespace = "")
+        String idCorreo);
+
+    /**
+     * 
      * @param contrasena
      * @param correoId
      * @return
@@ -227,80 +428,6 @@ public interface AsignarTurnos {
      * 
      * @param nit
      * @return
-     *     returns java.util.List<java.lang.String>
-     */
-    @WebMethod(operationName = "BuscarEntidad")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "BuscarEntidad", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidad")
-    @ResponseWrapper(localName = "BuscarEntidadResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidadResponse")
-    public List<String> buscarEntidad(
-        @WebParam(name = "Nit", targetNamespace = "")
-        String nit);
-
-    /**
-     * 
-     * @param nombre
-     * @param direccion
-     * @param nombreContacto
-     * @param nitEntidad
-     * @param telefonoContacto
-     * @param correo
-     * @return
-     *     returns int
-     */
-    @WebMethod(operationName = "AgregarSede")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "AgregarSede", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarSede")
-    @ResponseWrapper(localName = "AgregarSedeResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarSedeResponse")
-    public int agregarSede(
-        @WebParam(name = "NitEntidad", targetNamespace = "")
-        String nitEntidad,
-        @WebParam(name = "Nombre", targetNamespace = "")
-        String nombre,
-        @WebParam(name = "NombreContacto", targetNamespace = "")
-        String nombreContacto,
-        @WebParam(name = "TelefonoContacto", targetNamespace = "")
-        String telefonoContacto,
-        @WebParam(name = "Correo", targetNamespace = "")
-        String correo,
-        @WebParam(name = "Direccion", targetNamespace = "")
-        String direccion);
-
-    /**
-     * 
-     * @param cod
-     * @return
-     *     returns java.util.List<java.lang.String>
-     */
-    @WebMethod(operationName = "BuscarSedeCodigo")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "BuscarSedeCodigo", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedeCodigo")
-    @ResponseWrapper(localName = "BuscarSedeCodigoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarSedeCodigoResponse")
-    public List<String> buscarSedeCodigo(
-        @WebParam(name = "cod", targetNamespace = "")
-        String cod);
-
-    /**
-     * 
-     * @param servicio
-     * @param codigoSede
-     * @return
-     *     returns boolean
-     */
-    @WebMethod(operationName = "AgregarServicio")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "AgregarServicio", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarServicio")
-    @ResponseWrapper(localName = "AgregarServicioResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AgregarServicioResponse")
-    public boolean agregarServicio(
-        @WebParam(name = "codigoSede", targetNamespace = "")
-        String codigoSede,
-        @WebParam(name = "servicio", targetNamespace = "")
-        String servicio);
-
-    /**
-     * 
-     * @param nit
-     * @return
      *     returns java.util.List<com.esperapp.ws.Sede>
      */
     @WebMethod(operationName = "BuscarSedesClaseXEntidad")
@@ -313,6 +440,20 @@ public interface AsignarTurnos {
 
     /**
      * 
+     * @param turno
+     * @return
+     *     returns com.esperapp.ws.Turno
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "buscarTurno", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarTurno")
+    @ResponseWrapper(localName = "buscarTurnoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarTurnoResponse")
+    public Turno buscarTurno(
+        @WebParam(name = "turno", targetNamespace = "")
+        String turno);
+
+    /**
+     * 
      * @return
      *     returns java.util.List<com.esperapp.ws.Entidad>
      */
@@ -321,40 +462,6 @@ public interface AsignarTurnos {
     @RequestWrapper(localName = "BuscarEntidadesNombres", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidadesNombres")
     @ResponseWrapper(localName = "BuscarEntidadesNombresResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.BuscarEntidadesNombresResponse")
     public List<Entidad> buscarEntidadesNombres();
-
-    /**
-     * 
-     * @param name
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "hello", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.Hello")
-    @ResponseWrapper(localName = "helloResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.HelloResponse")
-    public String hello(
-        @WebParam(name = "name", targetNamespace = "")
-        String name);
-
-    /**
-     * 
-     * @param idSede
-     * @param correoUsuario
-     * @param servicioId
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod(operationName = "AsignarTurno")
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "AsignarTurno", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AsignarTurno")
-    @ResponseWrapper(localName = "AsignarTurnoResponse", targetNamespace = "http://ws.esperapp.com/", className = "com.esperapp.ws.AsignarTurnoResponse")
-    public String asignarTurno(
-        @WebParam(name = "CorreoUsuario", targetNamespace = "")
-        String correoUsuario,
-        @WebParam(name = "Id_Sede", targetNamespace = "")
-        String idSede,
-        @WebParam(name = "servicioId", targetNamespace = "")
-        String servicioId);
 
     /**
      * 

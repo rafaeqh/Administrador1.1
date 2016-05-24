@@ -232,7 +232,7 @@ public class AgregarReceptor extends javax.swing.JFrame {
     private void jButtonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarActionPerformed
         // TODO add your handling code here:
         
-        JOptionPane.showMessageDialog(null ,"El proceso a finalizado satisfactoriamente" );
+        JOptionPane.showMessageDialog(null ,"El proceso ha finalizado satisfactoriamente" );
         
         MenuAdmin nuevoMenu = new MenuAdmin();
         this.setVisible(false);

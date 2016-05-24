@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="CorreoUsuario" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="Id_Sede" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="servicioId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="Id_Servicio" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "AsignarTurno", propOrder = {
     "correoUsuario",
     "idSede",
-    "servicioId"
+    "idServicio"
 })
 public class AsignarTurno {
 
@@ -40,7 +40,8 @@ public class AsignarTurno {
     protected String correoUsuario;
     @XmlElement(name = "Id_Sede")
     protected String idSede;
-    protected String servicioId;
+    @XmlElement(name = "Id_Servicio")
+    protected String idServicio;
 
     /**
      * Obtiene el valor de la propiedad correoUsuario.
@@ -91,27 +92,27 @@ public class AsignarTurno {
     }
 
     /**
-     * Obtiene el valor de la propiedad servicioId.
+     * Obtiene el valor de la propiedad idServicio.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getServicioId() {
-        return servicioId;
+    public String getIdServicio() {
+        return idServicio;
     }
 
     /**
-     * Define el valor de la propiedad servicioId.
+     * Define el valor de la propiedad idServicio.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setServicioId(String value) {
-        this.servicioId = value;
+    public void setIdServicio(String value) {
+        this.idServicio = value;
     }
 
 }

@@ -113,6 +113,7 @@ public class LoginAdmin extends javax.swing.JFrame {
         
             MenuAdmin menu = new MenuAdmin();
             menu.setVisible(true);
+           
             this.setVisible(false);
             }else{
         

@@ -24,62 +24,83 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Turno_QNAME = new QName("http://ws.esperapp.com/", "turno");
-    private final static QName _AgregarEntidadResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarEntidadResponse");
     private final static QName _AgregarEmpleado_QNAME = new QName("http://ws.esperapp.com/", "AgregarEmpleado");
     private final static QName _LoginAdminResponse_QNAME = new QName("http://ws.esperapp.com/", "loginAdminResponse");
-    private final static QName _TurnoReceptorResponse_QNAME = new QName("http://ws.esperapp.com/", "TurnoReceptorResponse");
     private final static QName _LoginEmpleado_QNAME = new QName("http://ws.esperapp.com/", "loginEmpleado");
     private final static QName _AgregarSede_QNAME = new QName("http://ws.esperapp.com/", "AgregarSede");
-    private final static QName _Usuario_QNAME = new QName("http://ws.esperapp.com/", "usuario");
+    private final static QName _EnviarNotificacion_QNAME = new QName("http://ws.esperapp.com/", "EnviarNotificacion");
     private final static QName _AsignarTurno_QNAME = new QName("http://ws.esperapp.com/", "AsignarTurno");
-    private final static QName _Sede_QNAME = new QName("http://ws.esperapp.com/", "sede");
-    private final static QName _BuscarServiciosSedeResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarServiciosSedeResponse");
     private final static QName _BuscarSedesClaseXEntidadResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedesClaseXEntidadResponse");
-    private final static QName _AgregarServicioResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarServicioResponse");
-    private final static QName _BuscarEmpleado_QNAME = new QName("http://ws.esperapp.com/", "BuscarEmpleado");
     private final static QName _AtenderCliente_QNAME = new QName("http://ws.esperapp.com/", "AtenderCliente");
-    private final static QName _AtenderClienteResponse_QNAME = new QName("http://ws.esperapp.com/", "AtenderClienteResponse");
-    private final static QName _AgregarSedeResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarSedeResponse");
-    private final static QName _AgregarEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarEmpleadoResponse");
-    private final static QName _Receptor_QNAME = new QName("http://ws.esperapp.com/", "receptor");
+    private final static QName _TurnosNoAtendidosEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "TurnosNoAtendidosEmpleadoResponse");
+    private final static QName _EnviarTrabajoResponse_QNAME = new QName("http://ws.esperapp.com/", "enviarTrabajoResponse");
     private final static QName _AgregarReceptorResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarReceptorResponse");
-    private final static QName _RegistrarUsuarioResponse_QNAME = new QName("http://ws.esperapp.com/", "RegistrarUsuarioResponse");
     private final static QName _BuscarEntidadesNombres_QNAME = new QName("http://ws.esperapp.com/", "BuscarEntidadesNombres");
-    private final static QName _BuscarServiciosSede_QNAME = new QName("http://ws.esperapp.com/", "BuscarServiciosSede");
+    private final static QName _RegistrarComoAtendidoResponse_QNAME = new QName("http://ws.esperapp.com/", "RegistrarComoAtendidoResponse");
     private final static QName _BuscarEntidadResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarEntidadResponse");
     private final static QName _LoginUsuario_QNAME = new QName("http://ws.esperapp.com/", "loginUsuario");
-    private final static QName _Servicio_QNAME = new QName("http://ws.esperapp.com/", "servicio");
+    private final static QName _EnviarTrabajo_QNAME = new QName("http://ws.esperapp.com/", "enviarTrabajo");
     private final static QName _AgregarServicio_QNAME = new QName("http://ws.esperapp.com/", "AgregarServicio");
+    private final static QName _Servicio_QNAME = new QName("http://ws.esperapp.com/", "servicio");
+    private final static QName _CancelarTurnoResponse_QNAME = new QName("http://ws.esperapp.com/", "cancelarTurnoResponse");
+    private final static QName _AgregarReceptor_QNAME = new QName("http://ws.esperapp.com/", "AgregarReceptor");
+    private final static QName _BuscarSedeCodigo_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedeCodigo");
+    private final static QName _LoginUsuarioResponse_QNAME = new QName("http://ws.esperapp.com/", "loginUsuarioResponse");
+    private final static QName _LoginEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "loginEmpleadoResponse");
+    private final static QName _BuscarEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarEmpleadoResponse");
+    private final static QName _Entidad_QNAME = new QName("http://ws.esperapp.com/", "entidad");
+    private final static QName _EnviarNotificacionResponse_QNAME = new QName("http://ws.esperapp.com/", "EnviarNotificacionResponse");
+    private final static QName _AsignarTurnoResponse_QNAME = new QName("http://ws.esperapp.com/", "AsignarTurnoResponse");
+    private final static QName _EditarCuentaAdminResponse_QNAME = new QName("http://ws.esperapp.com/", "EditarCuentaAdminResponse");
+    private final static QName _HelloResponse_QNAME = new QName("http://ws.esperapp.com/", "helloResponse");
+    private final static QName _RegistrarComoAtendido_QNAME = new QName("http://ws.esperapp.com/", "RegistrarComoAtendido");
+    private final static QName _Turno_QNAME = new QName("http://ws.esperapp.com/", "turno");
+    private final static QName _AgregarEntidadResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarEntidadResponse");
+    private final static QName _Usuario_QNAME = new QName("http://ws.esperapp.com/", "usuario");
+    private final static QName _Sede_QNAME = new QName("http://ws.esperapp.com/", "sede");
+    private final static QName _BuscarServiciosSedeResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarServiciosSedeResponse");
+    private final static QName _VerHistorialTurnos_QNAME = new QName("http://ws.esperapp.com/", "VerHistorialTurnos");
+    private final static QName _AgregarServicioResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarServicioResponse");
+    private final static QName _BuscarEmpleado_QNAME = new QName("http://ws.esperapp.com/", "BuscarEmpleado");
+    private final static QName _AtenderClienteResponse_QNAME = new QName("http://ws.esperapp.com/", "AtenderClienteResponse");
+    private final static QName _AgregarSedeResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarSedeResponse");
+    private final static QName _BuscarTurnoResponse_QNAME = new QName("http://ws.esperapp.com/", "buscarTurnoResponse");
+    private final static QName _AgregarEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "AgregarEmpleadoResponse");
+    private final static QName _Receptor_QNAME = new QName("http://ws.esperapp.com/", "receptor");
+    private final static QName _BuscarTurno_QNAME = new QName("http://ws.esperapp.com/", "buscarTurno");
+    private final static QName _RegistrarUsuarioResponse_QNAME = new QName("http://ws.esperapp.com/", "RegistrarUsuarioResponse");
+    private final static QName _BuscarServiciosSede_QNAME = new QName("http://ws.esperapp.com/", "BuscarServiciosSede");
+    private final static QName _TurnosNoAtendidosEmpleado_QNAME = new QName("http://ws.esperapp.com/", "TurnosNoAtendidosEmpleado");
+    private final static QName _EditarCuentaAdmin_QNAME = new QName("http://ws.esperapp.com/", "EditarCuentaAdmin");
+    private final static QName _VerHistorialTurnosResponse_QNAME = new QName("http://ws.esperapp.com/", "VerHistorialTurnosResponse");
     private final static QName _Empleado_QNAME = new QName("http://ws.esperapp.com/", "empleado");
     private final static QName _AgregarEntidad_QNAME = new QName("http://ws.esperapp.com/", "AgregarEntidad");
-    private final static QName _BuscarSedeCodigo_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedeCodigo");
-    private final static QName _AgregarReceptor_QNAME = new QName("http://ws.esperapp.com/", "AgregarReceptor");
-    private final static QName _BuscarEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarEmpleadoResponse");
-    private final static QName _TurnoReceptor_QNAME = new QName("http://ws.esperapp.com/", "TurnoReceptor");
-    private final static QName _Entidad_QNAME = new QName("http://ws.esperapp.com/", "entidad");
-    private final static QName _LoginEmpleadoResponse_QNAME = new QName("http://ws.esperapp.com/", "loginEmpleadoResponse");
-    private final static QName _LoginUsuarioResponse_QNAME = new QName("http://ws.esperapp.com/", "loginUsuarioResponse");
     private final static QName _BuscarSedeCodigoResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedeCodigoResponse");
     private final static QName _BuscarSedesClase_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedesClase");
-    private final static QName _LoginAdmin_QNAME = new QName("http://ws.esperapp.com/", "loginAdmin");
     private final static QName _BuscarEntidadesNombresResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarEntidadesNombresResponse");
-    private final static QName _AsignarTurnoResponse_QNAME = new QName("http://ws.esperapp.com/", "AsignarTurnoResponse");
+    private final static QName _LoginAdmin_QNAME = new QName("http://ws.esperapp.com/", "loginAdmin");
     private final static QName _BuscarEntidad_QNAME = new QName("http://ws.esperapp.com/", "BuscarEntidad");
     private final static QName _BuscarSedesClaseXEntidad_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedesClaseXEntidad");
     private final static QName _RegistrarUsuario_QNAME = new QName("http://ws.esperapp.com/", "RegistrarUsuario");
     private final static QName _BuscarSedesClaseResponse_QNAME = new QName("http://ws.esperapp.com/", "BuscarSedesClaseResponse");
     private final static QName _Hello_QNAME = new QName("http://ws.esperapp.com/", "hello");
+    private final static QName _CancelarTurno_QNAME = new QName("http://ws.esperapp.com/", "cancelarTurno");
     private final static QName _Trabajo_QNAME = new QName("http://ws.esperapp.com/", "trabajo");
     private final static QName _CambiarEstado_QNAME = new QName("http://ws.esperapp.com/", "CambiarEstado");
-    private final static QName _HelloResponse_QNAME = new QName("http://ws.esperapp.com/", "helloResponse");
-    private final static QName _TurnoBackUp_QNAME = new QName("http://ws.esperapp.com/", "turnoBackUp");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.esperapp.ws
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link LoginEmpleado }
+     * 
+     */
+    public LoginEmpleado createLoginEmpleado() {
+        return new LoginEmpleado();
     }
 
     /**
@@ -91,11 +112,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LoginEmpleado }
+     * Create an instance of {@link EnviarNotificacion }
      * 
      */
-    public LoginEmpleado createLoginEmpleado() {
-        return new LoginEmpleado();
+    public EnviarNotificacion createEnviarNotificacion() {
+        return new EnviarNotificacion();
     }
 
     /**
@@ -115,14 +136,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TurnoReceptorResponse }
-     * 
-     */
-    public TurnoReceptorResponse createTurnoReceptorResponse() {
-        return new TurnoReceptorResponse();
-    }
-
-    /**
      * Create an instance of {@link LoginAdminResponse }
      * 
      */
@@ -131,11 +144,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TurnosNoAtendidosEmpleadoResponse }
+     * 
+     */
+    public TurnosNoAtendidosEmpleadoResponse createTurnosNoAtendidosEmpleadoResponse() {
+        return new TurnosNoAtendidosEmpleadoResponse();
+    }
+
+    /**
      * Create an instance of {@link AgregarReceptorResponse }
      * 
      */
     public AgregarReceptorResponse createAgregarReceptorResponse() {
         return new AgregarReceptorResponse();
+    }
+
+    /**
+     * Create an instance of {@link EnviarTrabajoResponse }
+     * 
+     */
+    public EnviarTrabajoResponse createEnviarTrabajoResponse() {
+        return new EnviarTrabajoResponse();
     }
 
     /**
@@ -155,6 +184,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Servicio }
+     * 
+     */
+    public Servicio createServicio() {
+        return new Servicio();
+    }
+
+    /**
      * Create an instance of {@link AgregarServicio }
      * 
      */
@@ -163,11 +200,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Servicio }
+     * Create an instance of {@link EnviarTrabajo }
      * 
      */
-    public Servicio createServicio() {
-        return new Servicio();
+    public EnviarTrabajo createEnviarTrabajo() {
+        return new EnviarTrabajo();
     }
 
     /**
@@ -187,19 +224,19 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link CancelarTurnoResponse }
+     * 
+     */
+    public CancelarTurnoResponse createCancelarTurnoResponse() {
+        return new CancelarTurnoResponse();
+    }
+
+    /**
      * Create an instance of {@link BuscarEntidadesNombres }
      * 
      */
     public BuscarEntidadesNombres createBuscarEntidadesNombres() {
         return new BuscarEntidadesNombres();
-    }
-
-    /**
-     * Create an instance of {@link BuscarEntidadResponse }
-     * 
-     */
-    public BuscarEntidadResponse createBuscarEntidadResponse() {
-        return new BuscarEntidadResponse();
     }
 
     /**
@@ -211,11 +248,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link TurnoBackUp }
+     * Create an instance of {@link BuscarEntidadResponse }
      * 
      */
-    public TurnoBackUp createTurnoBackUp() {
-        return new TurnoBackUp();
+    public BuscarEntidadResponse createBuscarEntidadResponse() {
+        return new BuscarEntidadResponse();
+    }
+
+    /**
+     * Create an instance of {@link RegistrarComoAtendidoResponse }
+     * 
+     */
+    public RegistrarComoAtendidoResponse createRegistrarComoAtendidoResponse() {
+        return new RegistrarComoAtendidoResponse();
+    }
+
+    /**
+     * Create an instance of {@link RegistrarComoAtendido }
+     * 
+     */
+    public RegistrarComoAtendido createRegistrarComoAtendido() {
+        return new RegistrarComoAtendido();
     }
 
     /**
@@ -227,27 +280,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BuscarEmpleadoResponse }
+     * Create an instance of {@link LoginUsuarioResponse }
      * 
      */
-    public BuscarEmpleadoResponse createBuscarEmpleadoResponse() {
-        return new BuscarEmpleadoResponse();
-    }
-
-    /**
-     * Create an instance of {@link TurnoReceptor }
-     * 
-     */
-    public TurnoReceptor createTurnoReceptor() {
-        return new TurnoReceptor();
-    }
-
-    /**
-     * Create an instance of {@link Entidad }
-     * 
-     */
-    public Entidad createEntidad() {
-        return new Entidad();
+    public LoginUsuarioResponse createLoginUsuarioResponse() {
+        return new LoginUsuarioResponse();
     }
 
     /**
@@ -259,11 +296,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LoginUsuarioResponse }
+     * Create an instance of {@link BuscarEmpleadoResponse }
      * 
      */
-    public LoginUsuarioResponse createLoginUsuarioResponse() {
-        return new LoginUsuarioResponse();
+    public BuscarEmpleadoResponse createBuscarEmpleadoResponse() {
+        return new BuscarEmpleadoResponse();
+    }
+
+    /**
+     * Create an instance of {@link Entidad }
+     * 
+     */
+    public Entidad createEntidad() {
+        return new Entidad();
     }
 
     /**
@@ -272,6 +317,22 @@ public class ObjectFactory {
      */
     public AsignarTurnoResponse createAsignarTurnoResponse() {
         return new AsignarTurnoResponse();
+    }
+
+    /**
+     * Create an instance of {@link EnviarNotificacionResponse }
+     * 
+     */
+    public EnviarNotificacionResponse createEnviarNotificacionResponse() {
+        return new EnviarNotificacionResponse();
+    }
+
+    /**
+     * Create an instance of {@link EditarCuentaAdminResponse }
+     * 
+     */
+    public EditarCuentaAdminResponse createEditarCuentaAdminResponse() {
+        return new EditarCuentaAdminResponse();
     }
 
     /**
@@ -331,6 +392,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link BuscarTurnoResponse }
+     * 
+     */
+    public BuscarTurnoResponse createBuscarTurnoResponse() {
+        return new BuscarTurnoResponse();
+    }
+
+    /**
      * Create an instance of {@link Receptor }
      * 
      */
@@ -339,11 +408,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link BuscarTurno }
+     * 
+     */
+    public BuscarTurno createBuscarTurno() {
+        return new BuscarTurno();
+    }
+
+    /**
      * Create an instance of {@link BuscarServiciosSedeResponse }
      * 
      */
     public BuscarServiciosSedeResponse createBuscarServiciosSedeResponse() {
         return new BuscarServiciosSedeResponse();
+    }
+
+    /**
+     * Create an instance of {@link VerHistorialTurnos }
+     * 
+     */
+    public VerHistorialTurnos createVerHistorialTurnos() {
+        return new VerHistorialTurnos();
     }
 
     /**
@@ -360,6 +445,30 @@ public class ObjectFactory {
      */
     public AgregarServicioResponse createAgregarServicioResponse() {
         return new AgregarServicioResponse();
+    }
+
+    /**
+     * Create an instance of {@link TurnosNoAtendidosEmpleado }
+     * 
+     */
+    public TurnosNoAtendidosEmpleado createTurnosNoAtendidosEmpleado() {
+        return new TurnosNoAtendidosEmpleado();
+    }
+
+    /**
+     * Create an instance of {@link EditarCuentaAdmin }
+     * 
+     */
+    public EditarCuentaAdmin createEditarCuentaAdmin() {
+        return new EditarCuentaAdmin();
+    }
+
+    /**
+     * Create an instance of {@link VerHistorialTurnosResponse }
+     * 
+     */
+    public VerHistorialTurnosResponse createVerHistorialTurnosResponse() {
+        return new VerHistorialTurnosResponse();
     }
 
     /**
@@ -427,11 +536,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link BuscarEntidadesNombresResponse }
+     * Create an instance of {@link CancelarTurno }
      * 
      */
-    public BuscarEntidadesNombresResponse createBuscarEntidadesNombresResponse() {
-        return new BuscarEntidadesNombresResponse();
+    public CancelarTurno createCancelarTurno() {
+        return new CancelarTurno();
     }
 
     /**
@@ -440,6 +549,14 @@ public class ObjectFactory {
      */
     public LoginAdmin createLoginAdmin() {
         return new LoginAdmin();
+    }
+
+    /**
+     * Create an instance of {@link BuscarEntidadesNombresResponse }
+     * 
+     */
+    public BuscarEntidadesNombresResponse createBuscarEntidadesNombresResponse() {
+        return new BuscarEntidadesNombresResponse();
     }
 
     /**
@@ -491,24 +608,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Turno }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "turno")
-    public JAXBElement<Turno> createTurno(Turno value) {
-        return new JAXBElement<Turno>(_Turno_QNAME, Turno.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarEntidadResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarEntidadResponse")
-    public JAXBElement<AgregarEntidadResponse> createAgregarEntidadResponse(AgregarEntidadResponse value) {
-        return new JAXBElement<AgregarEntidadResponse>(_AgregarEntidadResponse_QNAME, AgregarEntidadResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AgregarEmpleado }{@code >}}
      * 
      */
@@ -524,15 +623,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginAdminResponse")
     public JAXBElement<LoginAdminResponse> createLoginAdminResponse(LoginAdminResponse value) {
         return new JAXBElement<LoginAdminResponse>(_LoginAdminResponse_QNAME, LoginAdminResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TurnoReceptorResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "TurnoReceptorResponse")
-    public JAXBElement<TurnoReceptorResponse> createTurnoReceptorResponse(TurnoReceptorResponse value) {
-        return new JAXBElement<TurnoReceptorResponse>(_TurnoReceptorResponse_QNAME, TurnoReceptorResponse.class, null, value);
     }
 
     /**
@@ -554,12 +644,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Usuario }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnviarNotificacion }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "usuario")
-    public JAXBElement<Usuario> createUsuario(Usuario value) {
-        return new JAXBElement<Usuario>(_Usuario_QNAME, Usuario.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "EnviarNotificacion")
+    public JAXBElement<EnviarNotificacion> createEnviarNotificacion(EnviarNotificacion value) {
+        return new JAXBElement<EnviarNotificacion>(_EnviarNotificacion_QNAME, EnviarNotificacion.class, null, value);
     }
 
     /**
@@ -572,48 +662,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Sede }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "sede")
-    public JAXBElement<Sede> createSede(Sede value) {
-        return new JAXBElement<Sede>(_Sede_QNAME, Sede.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarServiciosSedeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarServiciosSedeResponse")
-    public JAXBElement<BuscarServiciosSedeResponse> createBuscarServiciosSedeResponse(BuscarServiciosSedeResponse value) {
-        return new JAXBElement<BuscarServiciosSedeResponse>(_BuscarServiciosSedeResponse_QNAME, BuscarServiciosSedeResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuscarSedesClaseXEntidadResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarSedesClaseXEntidadResponse")
     public JAXBElement<BuscarSedesClaseXEntidadResponse> createBuscarSedesClaseXEntidadResponse(BuscarSedesClaseXEntidadResponse value) {
         return new JAXBElement<BuscarSedesClaseXEntidadResponse>(_BuscarSedesClaseXEntidadResponse_QNAME, BuscarSedesClaseXEntidadResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarServicioResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarServicioResponse")
-    public JAXBElement<AgregarServicioResponse> createAgregarServicioResponse(AgregarServicioResponse value) {
-        return new JAXBElement<AgregarServicioResponse>(_AgregarServicioResponse_QNAME, AgregarServicioResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEmpleado }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarEmpleado")
-    public JAXBElement<BuscarEmpleado> createBuscarEmpleado(BuscarEmpleado value) {
-        return new JAXBElement<BuscarEmpleado>(_BuscarEmpleado_QNAME, BuscarEmpleado.class, null, value);
     }
 
     /**
@@ -626,39 +680,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AtenderClienteResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link TurnosNoAtendidosEmpleadoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AtenderClienteResponse")
-    public JAXBElement<AtenderClienteResponse> createAtenderClienteResponse(AtenderClienteResponse value) {
-        return new JAXBElement<AtenderClienteResponse>(_AtenderClienteResponse_QNAME, AtenderClienteResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "TurnosNoAtendidosEmpleadoResponse")
+    public JAXBElement<TurnosNoAtendidosEmpleadoResponse> createTurnosNoAtendidosEmpleadoResponse(TurnosNoAtendidosEmpleadoResponse value) {
+        return new JAXBElement<TurnosNoAtendidosEmpleadoResponse>(_TurnosNoAtendidosEmpleadoResponse_QNAME, TurnosNoAtendidosEmpleadoResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarSedeResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnviarTrabajoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarSedeResponse")
-    public JAXBElement<AgregarSedeResponse> createAgregarSedeResponse(AgregarSedeResponse value) {
-        return new JAXBElement<AgregarSedeResponse>(_AgregarSedeResponse_QNAME, AgregarSedeResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarEmpleadoResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarEmpleadoResponse")
-    public JAXBElement<AgregarEmpleadoResponse> createAgregarEmpleadoResponse(AgregarEmpleadoResponse value) {
-        return new JAXBElement<AgregarEmpleadoResponse>(_AgregarEmpleadoResponse_QNAME, AgregarEmpleadoResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Receptor }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "receptor")
-    public JAXBElement<Receptor> createReceptor(Receptor value) {
-        return new JAXBElement<Receptor>(_Receptor_QNAME, Receptor.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "enviarTrabajoResponse")
+    public JAXBElement<EnviarTrabajoResponse> createEnviarTrabajoResponse(EnviarTrabajoResponse value) {
+        return new JAXBElement<EnviarTrabajoResponse>(_EnviarTrabajoResponse_QNAME, EnviarTrabajoResponse.class, null, value);
     }
 
     /**
@@ -671,15 +707,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link RegistrarUsuarioResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "RegistrarUsuarioResponse")
-    public JAXBElement<RegistrarUsuarioResponse> createRegistrarUsuarioResponse(RegistrarUsuarioResponse value) {
-        return new JAXBElement<RegistrarUsuarioResponse>(_RegistrarUsuarioResponse_QNAME, RegistrarUsuarioResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEntidadesNombres }{@code >}}
      * 
      */
@@ -689,12 +716,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarServiciosSede }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegistrarComoAtendidoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarServiciosSede")
-    public JAXBElement<BuscarServiciosSede> createBuscarServiciosSede(BuscarServiciosSede value) {
-        return new JAXBElement<BuscarServiciosSede>(_BuscarServiciosSede_QNAME, BuscarServiciosSede.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "RegistrarComoAtendidoResponse")
+    public JAXBElement<RegistrarComoAtendidoResponse> createRegistrarComoAtendidoResponse(RegistrarComoAtendidoResponse value) {
+        return new JAXBElement<RegistrarComoAtendidoResponse>(_RegistrarComoAtendidoResponse_QNAME, RegistrarComoAtendidoResponse.class, null, value);
     }
 
     /**
@@ -716,12 +743,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Servicio }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnviarTrabajo }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "servicio")
-    public JAXBElement<Servicio> createServicio(Servicio value) {
-        return new JAXBElement<Servicio>(_Servicio_QNAME, Servicio.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "enviarTrabajo")
+    public JAXBElement<EnviarTrabajo> createEnviarTrabajo(EnviarTrabajo value) {
+        return new JAXBElement<EnviarTrabajo>(_EnviarTrabajo_QNAME, EnviarTrabajo.class, null, value);
     }
 
     /**
@@ -731,6 +758,294 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarServicio")
     public JAXBElement<AgregarServicio> createAgregarServicio(AgregarServicio value) {
         return new JAXBElement<AgregarServicio>(_AgregarServicio_QNAME, AgregarServicio.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Servicio }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "servicio")
+    public JAXBElement<Servicio> createServicio(Servicio value) {
+        return new JAXBElement<Servicio>(_Servicio_QNAME, Servicio.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CancelarTurnoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "cancelarTurnoResponse")
+    public JAXBElement<CancelarTurnoResponse> createCancelarTurnoResponse(CancelarTurnoResponse value) {
+        return new JAXBElement<CancelarTurnoResponse>(_CancelarTurnoResponse_QNAME, CancelarTurnoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarReceptor }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarReceptor")
+    public JAXBElement<AgregarReceptor> createAgregarReceptor(AgregarReceptor value) {
+        return new JAXBElement<AgregarReceptor>(_AgregarReceptor_QNAME, AgregarReceptor.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarSedeCodigo }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarSedeCodigo")
+    public JAXBElement<BuscarSedeCodigo> createBuscarSedeCodigo(BuscarSedeCodigo value) {
+        return new JAXBElement<BuscarSedeCodigo>(_BuscarSedeCodigo_QNAME, BuscarSedeCodigo.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginUsuarioResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginUsuarioResponse")
+    public JAXBElement<LoginUsuarioResponse> createLoginUsuarioResponse(LoginUsuarioResponse value) {
+        return new JAXBElement<LoginUsuarioResponse>(_LoginUsuarioResponse_QNAME, LoginUsuarioResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginEmpleadoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginEmpleadoResponse")
+    public JAXBElement<LoginEmpleadoResponse> createLoginEmpleadoResponse(LoginEmpleadoResponse value) {
+        return new JAXBElement<LoginEmpleadoResponse>(_LoginEmpleadoResponse_QNAME, LoginEmpleadoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEmpleadoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarEmpleadoResponse")
+    public JAXBElement<BuscarEmpleadoResponse> createBuscarEmpleadoResponse(BuscarEmpleadoResponse value) {
+        return new JAXBElement<BuscarEmpleadoResponse>(_BuscarEmpleadoResponse_QNAME, BuscarEmpleadoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Entidad }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "entidad")
+    public JAXBElement<Entidad> createEntidad(Entidad value) {
+        return new JAXBElement<Entidad>(_Entidad_QNAME, Entidad.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnviarNotificacionResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "EnviarNotificacionResponse")
+    public JAXBElement<EnviarNotificacionResponse> createEnviarNotificacionResponse(EnviarNotificacionResponse value) {
+        return new JAXBElement<EnviarNotificacionResponse>(_EnviarNotificacionResponse_QNAME, EnviarNotificacionResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AsignarTurnoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AsignarTurnoResponse")
+    public JAXBElement<AsignarTurnoResponse> createAsignarTurnoResponse(AsignarTurnoResponse value) {
+        return new JAXBElement<AsignarTurnoResponse>(_AsignarTurnoResponse_QNAME, AsignarTurnoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EditarCuentaAdminResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "EditarCuentaAdminResponse")
+    public JAXBElement<EditarCuentaAdminResponse> createEditarCuentaAdminResponse(EditarCuentaAdminResponse value) {
+        return new JAXBElement<EditarCuentaAdminResponse>(_EditarCuentaAdminResponse_QNAME, EditarCuentaAdminResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link HelloResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "helloResponse")
+    public JAXBElement<HelloResponse> createHelloResponse(HelloResponse value) {
+        return new JAXBElement<HelloResponse>(_HelloResponse_QNAME, HelloResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegistrarComoAtendido }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "RegistrarComoAtendido")
+    public JAXBElement<RegistrarComoAtendido> createRegistrarComoAtendido(RegistrarComoAtendido value) {
+        return new JAXBElement<RegistrarComoAtendido>(_RegistrarComoAtendido_QNAME, RegistrarComoAtendido.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Turno }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "turno")
+    public JAXBElement<Turno> createTurno(Turno value) {
+        return new JAXBElement<Turno>(_Turno_QNAME, Turno.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarEntidadResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarEntidadResponse")
+    public JAXBElement<AgregarEntidadResponse> createAgregarEntidadResponse(AgregarEntidadResponse value) {
+        return new JAXBElement<AgregarEntidadResponse>(_AgregarEntidadResponse_QNAME, AgregarEntidadResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Usuario }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "usuario")
+    public JAXBElement<Usuario> createUsuario(Usuario value) {
+        return new JAXBElement<Usuario>(_Usuario_QNAME, Usuario.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Sede }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "sede")
+    public JAXBElement<Sede> createSede(Sede value) {
+        return new JAXBElement<Sede>(_Sede_QNAME, Sede.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarServiciosSedeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarServiciosSedeResponse")
+    public JAXBElement<BuscarServiciosSedeResponse> createBuscarServiciosSedeResponse(BuscarServiciosSedeResponse value) {
+        return new JAXBElement<BuscarServiciosSedeResponse>(_BuscarServiciosSedeResponse_QNAME, BuscarServiciosSedeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link VerHistorialTurnos }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "VerHistorialTurnos")
+    public JAXBElement<VerHistorialTurnos> createVerHistorialTurnos(VerHistorialTurnos value) {
+        return new JAXBElement<VerHistorialTurnos>(_VerHistorialTurnos_QNAME, VerHistorialTurnos.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarServicioResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarServicioResponse")
+    public JAXBElement<AgregarServicioResponse> createAgregarServicioResponse(AgregarServicioResponse value) {
+        return new JAXBElement<AgregarServicioResponse>(_AgregarServicioResponse_QNAME, AgregarServicioResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEmpleado }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarEmpleado")
+    public JAXBElement<BuscarEmpleado> createBuscarEmpleado(BuscarEmpleado value) {
+        return new JAXBElement<BuscarEmpleado>(_BuscarEmpleado_QNAME, BuscarEmpleado.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AtenderClienteResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AtenderClienteResponse")
+    public JAXBElement<AtenderClienteResponse> createAtenderClienteResponse(AtenderClienteResponse value) {
+        return new JAXBElement<AtenderClienteResponse>(_AtenderClienteResponse_QNAME, AtenderClienteResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarSedeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarSedeResponse")
+    public JAXBElement<AgregarSedeResponse> createAgregarSedeResponse(AgregarSedeResponse value) {
+        return new JAXBElement<AgregarSedeResponse>(_AgregarSedeResponse_QNAME, AgregarSedeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarTurnoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "buscarTurnoResponse")
+    public JAXBElement<BuscarTurnoResponse> createBuscarTurnoResponse(BuscarTurnoResponse value) {
+        return new JAXBElement<BuscarTurnoResponse>(_BuscarTurnoResponse_QNAME, BuscarTurnoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarEmpleadoResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarEmpleadoResponse")
+    public JAXBElement<AgregarEmpleadoResponse> createAgregarEmpleadoResponse(AgregarEmpleadoResponse value) {
+        return new JAXBElement<AgregarEmpleadoResponse>(_AgregarEmpleadoResponse_QNAME, AgregarEmpleadoResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Receptor }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "receptor")
+    public JAXBElement<Receptor> createReceptor(Receptor value) {
+        return new JAXBElement<Receptor>(_Receptor_QNAME, Receptor.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarTurno }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "buscarTurno")
+    public JAXBElement<BuscarTurno> createBuscarTurno(BuscarTurno value) {
+        return new JAXBElement<BuscarTurno>(_BuscarTurno_QNAME, BuscarTurno.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegistrarUsuarioResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "RegistrarUsuarioResponse")
+    public JAXBElement<RegistrarUsuarioResponse> createRegistrarUsuarioResponse(RegistrarUsuarioResponse value) {
+        return new JAXBElement<RegistrarUsuarioResponse>(_RegistrarUsuarioResponse_QNAME, RegistrarUsuarioResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarServiciosSede }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarServiciosSede")
+    public JAXBElement<BuscarServiciosSede> createBuscarServiciosSede(BuscarServiciosSede value) {
+        return new JAXBElement<BuscarServiciosSede>(_BuscarServiciosSede_QNAME, BuscarServiciosSede.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TurnosNoAtendidosEmpleado }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "TurnosNoAtendidosEmpleado")
+    public JAXBElement<TurnosNoAtendidosEmpleado> createTurnosNoAtendidosEmpleado(TurnosNoAtendidosEmpleado value) {
+        return new JAXBElement<TurnosNoAtendidosEmpleado>(_TurnosNoAtendidosEmpleado_QNAME, TurnosNoAtendidosEmpleado.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EditarCuentaAdmin }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "EditarCuentaAdmin")
+    public JAXBElement<EditarCuentaAdmin> createEditarCuentaAdmin(EditarCuentaAdmin value) {
+        return new JAXBElement<EditarCuentaAdmin>(_EditarCuentaAdmin_QNAME, EditarCuentaAdmin.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link VerHistorialTurnosResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "VerHistorialTurnosResponse")
+    public JAXBElement<VerHistorialTurnosResponse> createVerHistorialTurnosResponse(VerHistorialTurnosResponse value) {
+        return new JAXBElement<VerHistorialTurnosResponse>(_VerHistorialTurnosResponse_QNAME, VerHistorialTurnosResponse.class, null, value);
     }
 
     /**
@@ -752,69 +1067,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarSedeCodigo }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarSedeCodigo")
-    public JAXBElement<BuscarSedeCodigo> createBuscarSedeCodigo(BuscarSedeCodigo value) {
-        return new JAXBElement<BuscarSedeCodigo>(_BuscarSedeCodigo_QNAME, BuscarSedeCodigo.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AgregarReceptor }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AgregarReceptor")
-    public JAXBElement<AgregarReceptor> createAgregarReceptor(AgregarReceptor value) {
-        return new JAXBElement<AgregarReceptor>(_AgregarReceptor_QNAME, AgregarReceptor.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEmpleadoResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "BuscarEmpleadoResponse")
-    public JAXBElement<BuscarEmpleadoResponse> createBuscarEmpleadoResponse(BuscarEmpleadoResponse value) {
-        return new JAXBElement<BuscarEmpleadoResponse>(_BuscarEmpleadoResponse_QNAME, BuscarEmpleadoResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TurnoReceptor }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "TurnoReceptor")
-    public JAXBElement<TurnoReceptor> createTurnoReceptor(TurnoReceptor value) {
-        return new JAXBElement<TurnoReceptor>(_TurnoReceptor_QNAME, TurnoReceptor.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Entidad }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "entidad")
-    public JAXBElement<Entidad> createEntidad(Entidad value) {
-        return new JAXBElement<Entidad>(_Entidad_QNAME, Entidad.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginEmpleadoResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginEmpleadoResponse")
-    public JAXBElement<LoginEmpleadoResponse> createLoginEmpleadoResponse(LoginEmpleadoResponse value) {
-        return new JAXBElement<LoginEmpleadoResponse>(_LoginEmpleadoResponse_QNAME, LoginEmpleadoResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginUsuarioResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginUsuarioResponse")
-    public JAXBElement<LoginUsuarioResponse> createLoginUsuarioResponse(LoginUsuarioResponse value) {
-        return new JAXBElement<LoginUsuarioResponse>(_LoginUsuarioResponse_QNAME, LoginUsuarioResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuscarSedeCodigoResponse }{@code >}}
      * 
      */
@@ -833,15 +1085,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginAdmin }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginAdmin")
-    public JAXBElement<LoginAdmin> createLoginAdmin(LoginAdmin value) {
-        return new JAXBElement<LoginAdmin>(_LoginAdmin_QNAME, LoginAdmin.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuscarEntidadesNombresResponse }{@code >}}
      * 
      */
@@ -851,12 +1094,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link AsignarTurnoResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginAdmin }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "AsignarTurnoResponse")
-    public JAXBElement<AsignarTurnoResponse> createAsignarTurnoResponse(AsignarTurnoResponse value) {
-        return new JAXBElement<AsignarTurnoResponse>(_AsignarTurnoResponse_QNAME, AsignarTurnoResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "loginAdmin")
+    public JAXBElement<LoginAdmin> createLoginAdmin(LoginAdmin value) {
+        return new JAXBElement<LoginAdmin>(_LoginAdmin_QNAME, LoginAdmin.class, null, value);
     }
 
     /**
@@ -905,6 +1148,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CancelarTurno }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "cancelarTurno")
+    public JAXBElement<CancelarTurno> createCancelarTurno(CancelarTurno value) {
+        return new JAXBElement<CancelarTurno>(_CancelarTurno_QNAME, CancelarTurno.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Trabajo }{@code >}}
      * 
      */
@@ -920,24 +1172,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "CambiarEstado")
     public JAXBElement<CambiarEstado> createCambiarEstado(CambiarEstado value) {
         return new JAXBElement<CambiarEstado>(_CambiarEstado_QNAME, CambiarEstado.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HelloResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "helloResponse")
-    public JAXBElement<HelloResponse> createHelloResponse(HelloResponse value) {
-        return new JAXBElement<HelloResponse>(_HelloResponse_QNAME, HelloResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TurnoBackUp }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://ws.esperapp.com/", name = "turnoBackUp")
-    public JAXBElement<TurnoBackUp> createTurnoBackUp(TurnoBackUp value) {
-        return new JAXBElement<TurnoBackUp>(_TurnoBackUp_QNAME, TurnoBackUp.class, null, value);
     }
 
 }
